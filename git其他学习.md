@@ -10,10 +10,10 @@
 
 假如我有一个分支：`branch1`，我想把`branch1`的内容合并到`master`中，可以这样操作：
 
-    * > 切换到`branch1`分支:`git checkout branch1`
-    * > 改变`branch1`的基点，并将master合并到branch1中:`git rebase master`
-    * > 切换到`master`分支:`git checkout master`
-    * > 合并`branch1`分支:`git merge branch1`
+    > 切换到`branch1`分支:`git checkout branch1`
+    > 改变`branch1`的基点，并将master合并到branch1中:`git rebase master`
+    > 切换到`master`分支:`git checkout master`
+    > 合并`branch1`分支:`git merge branch1`
 
 可以使用场景，比如从主分支的一个`commit`中展开了一个分支：`branch1`，然后主分支又修改了一个bug，说明`branch1`中也存在这个bug，就可以使用`git rebase master`，讲`branch1`的代码和`master`新修改的bug的代码一致，这样`branch1`也和`master`一样了。
 
