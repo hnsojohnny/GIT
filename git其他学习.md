@@ -30,11 +30,11 @@
 
 如果以前的提交有错误，可以用`rebase -i`的方式来修改原来的`commit`
 
-    * > `git rebase -i 目标commit`
-    * > 进入编辑状态，讲`pick`改成`edit`状态
-    * > 修改文件后，加入缓存:`git add`
-    * > 然后加上`--amend`提交:`git commit --amend`
-    * > 在修复完成之后，就可以用`rebase --continue`来继续`rebase`过程，把后面的`commit`直接应用上去。
+    > `git rebase -i 目标commit`
+    > 进入编辑状态，讲`pick`改成`edit`状态
+    > 修改文件后，加入缓存:`git add`
+    > 然后加上`--amend`提交:`git commit --amend`
+    > 在修复完成之后，就可以用`rebase --continue`来继续`rebase`过程，把后面的`commit`直接应用上去。
 
 ### 丢弃刚刚的提交
 
